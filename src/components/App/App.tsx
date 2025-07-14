@@ -17,7 +17,7 @@ function App() {
   const handleVote = (type: VoteType) => {
     setVotes((prev) => ({
       ...prev,
-      [type]: votes[type] + 1,
+      [type]: prev[type] + 1,
     }));
   };
 
